@@ -11,7 +11,7 @@ class PokeTypes{
     print(damage);
     print(health);
     print(attack);
-    print(defense)
+    print(defense);
   }
   Ultready(){
    print("Special move is ready to be used"); 
