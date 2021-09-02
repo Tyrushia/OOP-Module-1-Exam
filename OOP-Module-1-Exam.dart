@@ -1,4 +1,4 @@
-//Encapsulation is shown in this class because properties of the String Fire type is shown such as damage and health with method showinfo to present the info on Fire type
+//Encapsulation shows that properties and methods used are combined together into a single class.
 class PokeTypes{
   String type= "Water type";
   int damage= 40;
@@ -16,15 +16,15 @@ class PokeTypes{
   Ultready(){
    print("Special move is ready to be used"); 
   }
-//The method pokestats contains the two methods showinfo and ultready which is abstraction.
+//Abstraction is used since method Pokestats() will only show method Showinfo() and Ultready() since it is the only necessary information to be shown to the user
   Pokestats(){
     Showinfo();
     Ultready();
   }
 }
-//Inheritance is shown since class Dialga will inherit the properties from class Poketypes
+//Inheritance is shown since class Palkia inherits the properties that class PokeTypes had.
 class Palkia extends PokeTypes{
-  @override //Polymorphism is shown because class Dialga who has inherited class Poketypes has changed the variable type from Fire Type to Steel type
+  @override //With the @override used, String Dragon types is able to change one property which is Water type to Dragon type but is still the same interace
   String type= "Dragon type"; 
 }
 void main(){
